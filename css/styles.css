@@ -102,9 +102,20 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--text-gray);
+
+    display: flex;
+    align-items: center;
 }
 
+.header-icon {
+    fill: var(--text-gray);
+    margin-right: 10px;
+}
 
+.header-icon:hover,
+.header-icon:active {
+    fill: var(--main-color);
+}
 
 .list-contact {
     display: flex;
@@ -142,10 +153,16 @@ body {
 /* Hero */
 
 .hero {
-    background-color: var(--background-secondary);
     letter-spacing: 0.06em;
     padding-top: 200px;
     padding-bottom: 200px;
+    background:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1600px;
+    margin: auto;
+
 }
 
 
