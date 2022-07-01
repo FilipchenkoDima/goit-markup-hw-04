@@ -112,8 +112,9 @@ body {
     margin-right: 10px;
 }
 
-.header-icon:hover,
-.header-icon:active {
+
+.link-contact:hover .header-icon,
+.link-contact:focus .header-icon {
     fill: var(--main-color);
 }
 
@@ -231,6 +232,17 @@ body {
     color: var(--text-gray);
 }
 
+.advantage-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+}
+
 /* Чим займаємось */
 
 .examples-title {
@@ -272,6 +284,8 @@ body {
 .team-member-position {
     padding-top: 30px;
     padding-bottom: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
 .team-member {
@@ -298,6 +312,66 @@ body {
     color: var(--text-gray);
 }
 
+.member-social-links {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.member-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+
+    fill: #AFB1B8;
+}
+
+.member-link:hover,
+.member-link:focus {
+    background-color: var(--main-color);
+    fill: var(--main-white);
+    border-radius: 50%;
+}
+
+/* Постійні клієнти */
+
+.clients-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.regular-customers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.regular-company {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    fill: #AFB1B8;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.regular-company:hover,
+.regular-company:focus {
+    fill: var(--main-color);
+    border-color: var(--main-color);
+}
+
 /* Футер */
 
 footer {
@@ -311,7 +385,7 @@ footer {
 
 .footer-position {
     display: flex;
-    flex-direction: column;
+    align-items: baseline;
 }
 
 .logo-footer {
@@ -349,6 +423,42 @@ footer {
     margin-bottom: 9px;
 }
 
+.footer-title {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    
+    color: var(--main-white);
+}
+
+.join {
+    margin-left: 70px;
+}
+
+.footer-join-links {
+    display: flex;
+    gap: 10px;
+
+}
+
+.join-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    
+    fill: var(--main-white);
+}
+
+.join-link:hover,
+.join-link:focus {
+    background-color: var(--main-color);
+}
+
 /* Кнопки фільтрації */
 
 .portfolio-button {
@@ -378,12 +488,14 @@ footer {
 .portfolio-button.active {
     color: var(--main-white);
     background-color: var(--main-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-button:hover,
 .portfolio-button:focus {
     color: var(--main-white);
     background-color: var(--main-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Приклади */
@@ -414,6 +526,16 @@ footer {
     line-height: 1.88;
 
     color: var(--text-gray);
+}
+
+.link-example-card {
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+.example-card:hover,
+.example-card:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .example-card-position {
