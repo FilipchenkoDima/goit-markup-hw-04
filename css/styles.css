@@ -395,6 +395,7 @@ footer {
     line-height: 1.19;
     color: var(--main-white);
     text-decoration: none;
+    display: block;
 
     margin-bottom: 20px;
 }
